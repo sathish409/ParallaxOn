@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.hero{
+    height: 90vh;
+    position: relative;   
+}
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    width: 500px;
+   border: 1px solid white;
+   border-radius: 10px;
+    background:rgba(128, 128, 128, 0.225);
+    padding: 10px;
+    position: absolute;
+    top:calc(50% - 200px);
+    left: calc(50% - 400px);
+    backdrop-filter: blur(5px);
+ 
+}
+.video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+hr{
+    padding: 1px;
+  background: white;
+}
+.arrow{
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    font-size: 50px;
+    color: red;
+    font-weight: bolder;
+    transform: rotate(90deg);
+   animation: arrow .5s infinite linear;
+}
+@keyframes arrow{
+0%{
+    left: 60vw;
+    top: 70vh;
+}
+100%{
+    left: 60vw;
+   
+}
+/* nav bar */
+}
+nav{
+    background: black;
+    color:orange;
+    position: sticky;
+    top: 0;
+    border: 1px solid  yellowgreen;
+}
+nav > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style-type: none;
+}
