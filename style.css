@@ -2,8 +2,6 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
-
 }
 .container{
     width: 80%;
@@ -11,14 +9,14 @@ body{
 }
 .hero{
     height: 90vh;
-    position: relative;   
+    /* position: relative;    */
 }
 *{
     box-sizing: border-box;
 }
 
 .card{
-    width: 500px;
+    width: 350px;
    border: 1px solid white;
    border-radius: 10px;
     background:rgba(128, 128, 128, 0.225);
@@ -43,7 +41,7 @@ hr{
 }
 .arrow{
     position: absolute;
-    left: 50%;
+    right: 90vw;
     top: 300px;
     font-size: 50px;
     color: red;
@@ -79,4 +77,63 @@ nav > div{
     justify-content: space-between;
     gap: 1rem;
     list-style-type: none;
+}
+/* image section */
+.title{
+    background: image();
+   background: rgba(0, 0, 0, 0.542);
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40%;
+  padding: 1.5rem .1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+.paralax{
+    background: rgba(128, 128, 128, 0.329);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 12px;
+
+  
+
+}
+[class^="img"]{
+    height: 60vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+ 
+}
+.img1{
+    background: url(image.1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+.img2{
+    background: url(image2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.img3{
+    background: url(image3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+
+
 }
